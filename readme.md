@@ -1,5 +1,5 @@
-# Setup ddclient for dynamic DNS-update in Cloudflare
-1. in your Clodflare account - configure your DNS-zone (domain, sub-domain(s)) and [create API-token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)
+# Setup "ddclient" for dynamic DNS-update in Cloudflare
+1. in your [Clodflare dashboard](https://dash.cloudflare.com) - configure your DNS-zone (domain, sub-domain(s)) and [create API-token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)
 2. copy [docker-compose.yml](docker-compose.yml) and [ddclient.conf](./ddclient.conf) to your working-directory
 3. in [ddclient.conf](./ddclient.conf) set your zone and domain/sub-domain (! A-record for sub-domain must already exist in your zone)
 ```
