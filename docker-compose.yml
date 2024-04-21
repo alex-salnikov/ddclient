@@ -1,0 +1,15 @@
+services:
+  ddclient:
+    image: lscr.io/linuxserver/ddclient:latest
+    container_name: ddclient
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./:/config
+    restart: unless-stopped
+
+# https://github.com/linuxserver/docker-ddclient
+# https://www.davidschlachter.com/misc/cloudflare-ddclient
+
