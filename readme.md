@@ -18,7 +18,7 @@ docker logs ddclient    # check logs
 ```
 6. Check logs by running: `docker logs ddclient`
 ```log
-$ docker-compose ps
+$ docker compose ps
 NAME       IMAGE                                 COMMAND   SERVICE    CREATED          STATUS          PORTS
 ddclient   lscr.io/linuxserver/ddclient:latest   "/init"   ddclient   11 seconds ago   Up 10 seconds
 
